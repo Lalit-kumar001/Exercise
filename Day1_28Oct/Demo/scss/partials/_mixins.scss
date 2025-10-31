@@ -1,0 +1,27 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-center-space{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 0px;
+}
+
+@mixin box-border{
+ border: 2px solid red;
+
+}
+
+@mixin list-setting{
+    text-decoration: none;
+    list-style: none;
+    color:#F5F7FA;
+    font-size: 14px;
+    a:hover{
+        color:blue;
+    }
+}
