@@ -1,0 +1,38 @@
+
+
+@mixin flex-box-vertical($gap: 20px, $align: center, $justify: center) {
+  display: flex;
+  flex-direction: column;
+  align-items: $align;
+  justify-content: $justify;
+  gap: $gap;
+  box-sizing: border-box;
+}
+@mixin flex-box-horizontal($gap:20px){
+    display: flex;
+   
+  gap: $gap;
+  box-sizing: border-box;
+}
+
+@mixin button-css($bg: #007bff, $color: #fff) {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: $bg;
+  color: $color;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: black;
+    transform: scale(1.05);
+  }
+}
+
+@mixin scale {
+  transform: scale(1.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}

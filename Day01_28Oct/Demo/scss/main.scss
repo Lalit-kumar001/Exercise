@@ -278,3 +278,197 @@ justify-content:space-around
       width: 18px;
       height: 18px;
     }
+
+    // banner css 
+
+    .banner-section{
+        background-color: #F5F7FA;
+        height: 599px;
+    }
+
+    .banner-container{
+  display: flex;
+  align-items: start;
+  align-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+  box-sizing: border-box;
+    }
+
+    .text-container{
+        h3{
+            color: #717171;
+            line-height: 24px;
+            font-size: 16px;
+            font-weight: 400;
+            margin-top: 5px;
+        }
+        button{
+    height: 52px;
+    width: 128px;
+    padding: 10px 20px;
+    border: none;
+    background-color:#4CAF4F;
+    color: white;
+    cursor: pointer;
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 3px;
+        }
+    }
+   .black-text{
+            color: #4D4D4D;
+            font-size: 64px;
+            font-weight: 600;
+        }
+    .green-text{
+        color: #4CAF4F;
+        font-size: 64px;
+            font-weight: 600;
+    }
+
+
+    // unlock section css 
+
+.unlock-section{
+    height: 433px;
+}
+.unlock-container{
+    @include unlock-calender
+}
+.unlock-text-container{
+    height: 268px;
+    width: 661px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+
+    h1{
+        width: 601px;
+        line-height: 44px;
+        color: #4D4D4D;
+        font-size: 36px;
+    }
+    p{
+        color: #717171;
+    }
+
+    button{
+        @include green-btn
+    }
+}
+
+// calender container css /
+
+.calender-section{
+    height: 433px;
+}
+.calender-container{
+    @include unlock-calender
+}
+.calender-text-container{
+    height: 268px;
+    width: 661px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+
+    h1{
+        width: 601px;
+        line-height: 44px;
+        color: #4D4D4D;
+        font-size: 36px;
+    }
+    p{
+        color: #717171;
+    }
+
+    button{
+        @include green-btn
+    }
+}
+
+// customer section 
+
+.customer-image{
+    width: 326px;
+    height: 326px;
+    border-radius: 8px;
+}
+
+.customer-container{
+@include unlock-calender
+}
+.customer-text-container{
+  height: 268px;
+    width: 661px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;  
+    
+    h1{
+        // width: 601px;
+        // line-height: 44px;
+        color: #4CAF4F;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 28px;
+    }
+    p{
+        color: #717171;
+    }
+}
+
+.customer-icon-container{
+display: flex;
+justify-content: center;
+gap: 41px;
+margin-top: 10px;
+    img{
+        height: 48px;
+        width: 48px;
+        border-radius: 8px;
+    }
+    h2{
+        color: #4CAF4F;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 28px;
+        width: 188px;
+        height: 28px;
+    }
+
+}
+
+// demo container css /
+
+   .demo-section{
+        background-color: #F5F7FA;
+        height: 300px;
+        margin-top: 50px;
+        padding-top: 50px;
+    }
+
+.demo-contianer{
+display: flex;
+flex-direction: column;
+align-items: center;
+  gap: 20px;
+    h1{
+        // color: #4CAF4F;
+        font-size: 64px;
+        width: 887px;
+        height: 152px;
+        font-weight: 600;
+        line-height: 76px;
+        text-align: center;
+    }
+
+    button{
+        @include green-btn;
+    }
+}

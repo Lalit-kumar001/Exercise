@@ -1,0 +1,101 @@
+
+
+@import 'partials/variables';
+@import 'partials/mixins';
+
+// Popup form styles
+#pop-up {
+  @include flex-box-vertical(15px);
+  background: linear-gradient(135deg, #8e9eab, #eef2f3);
+  padding: 30px;
+  border-radius: 12px;
+  width: 350px;
+  margin: 30px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+  input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+
+    &:focus {
+      border-color: $primary-color;
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+      outline: none;
+    }
+  }
+}
+
+// Product container
+.products-container {
+  @include flex-box-horizontal;
+  background-color: $background-light;
+  padding: 40px;
+  border-radius: 12px;
+  width: 90%;
+  margin: 30px auto;
+  align-items: stretch;
+  flex-wrap: wrap;
+
+  .product-box {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+
+    h1 {
+      font-size: 20px;
+      color: $text-dark;
+    }
+
+    h2 {
+      font-size: 18px;
+      color: $primary-color;
+    }
+
+    h3 {
+      font-size: 16px;
+      color: #555;
+    }
+
+    p {
+      font-size: 14px;
+      color: #444;
+    }
+
+    input {
+      padding: 6px 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 13px;
+      width: 80%;
+    }
+
+    .btn {
+      @include button-css($secondary-color);
+    }
+
+    &:hover {
+      @include scale;
+    }
+  }
+}
+
+// Max price display
+#maxPrice {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #d63384;
+  font-weight: bold;
+}

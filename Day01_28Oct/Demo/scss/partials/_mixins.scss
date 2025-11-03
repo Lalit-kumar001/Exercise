@@ -25,3 +25,24 @@
         color:blue;
     }
 }
+
+@mixin green-btn{
+    color: white;
+    background-color: #4CAF4F;
+    width: 151px;
+    height: 52px;
+    border-radius: 4px;
+    padding: 14px 32px;
+    font-weight: 500;
+}
+
+@mixin unlock-calender{
+  display: flex;
+  align-items: start;
+  align-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+  box-sizing: border-box;
+}
