@@ -61,7 +61,7 @@ Q5.<h1>Generate an SSH key pair and configure it for two different remote server
 <h3>grep "error" /var/log/syslog > errors_found.txt</h3>
 
 <h1>Q7. Find All .conf Files in /etc and Save Alphabetically</h1>
-<h3>ind /etc -type f -name "*.conf" | sort > conf_list.txt </h3>
+<h3>find /etc -type f -name "*.conf" | sort > conf_list.txt </h3>
 
 
 <h1>Q8. Display Total Number of Unique Shell Types </h1>
@@ -71,7 +71,8 @@ Q5.<h1>Generate an SSH key pair and configure it for two different remote server
 
 <h1>Q9.Reset Current User Password and Reboot </h1>
 
-<h3>tar -czvf home_backup.tar.gz /home/your_username</h3>
+<h3>passwd</h3>
+<h3>sudo reboot</h3>
 
 <h1>Q11.Zip Home Directory and Transfer via SCP</h1>
 
