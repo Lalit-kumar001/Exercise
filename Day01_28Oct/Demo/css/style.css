@@ -169,7 +169,6 @@ body {
 }
 
 .footer {
-  width: 100vw;
   height: 328px;
   background-color: #263238;
 }
@@ -504,6 +503,79 @@ body {
   border-radius: 4px;
   padding: 14px 32px;
   font-weight: 500;
+}
+
+.achievements-section {
+  height: 288px;
+  background-color: #F5F7FA;
+}
+
+.achievements-banner {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 52px;
+}
+
+.achievements-second-div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 308px;
+  height: 160px;
+}
+
+.achievements-first-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+.achievements-first-div p {
+  color: #18191F;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+#achievements-helping-text {
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 600;
+  color: #4CAF4F;
+}
+
+#achievements-buisness-text {
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 600;
+}
+
+.achievements-number-1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 100px;
+}
+
+.achievements-number-2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 100px;
+}
+
+.icon_text {
+  display: flex;
+  gap: 17px;
+}
+.icon_text h1 {
+  color: #4D4D4D;
+}
+.icon_text p {
+  color: #717171;
+}
+.icon_text img {
+  height: 48px;
+  width: 48px;
 }
 
 /*# sourceMappingURL=style.css.map */

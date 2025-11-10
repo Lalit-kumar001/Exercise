@@ -1,12 +1,10 @@
 function selectKeys(data) {
-const result = data.map((item) => {
-  return {
-    id: item.id,
-    title: item.title,
-    rate: item.rating.rate,
-    count: item.rating.count
-  };
-});
+  return data.map(({ id, title, rating: { rate, count } }) => ({
+    id,
+    title,
+    rate,
+    count
+  }));
 }
 
 

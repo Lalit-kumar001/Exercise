@@ -6,7 +6,7 @@
 // Popup form styles
 #pop-up {
   @include flex-box-vertical(15px);
-  background: linear-gradient(135deg, #8e9eab, #eef2f3);
+  background: #8e9eab;
   padding: 30px;
   border-radius: 12px;
   width: 350px;
