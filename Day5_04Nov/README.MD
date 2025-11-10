@@ -69,11 +69,11 @@ Q5.<h1>Generate an SSH key pair and configure it for two different remote server
 
 <!-- <h1>Q9  Vim – Basic Commands </h1> -->
 
-<h1>Reset Current User Password and Reboot </h1>
+<h1>Q9.Reset Current User Password and Reboot </h1>
 
 <h3>tar -czvf home_backup.tar.gz /home/your_username</h3>
 
-<h1>Zip Home Directory and Transfer via SCP</h1>
+<h1>Q11.Zip Home Directory and Transfer via SCP</h1>
 
 <h2> Compress Home Directory </h2>
 <h3>tar -cvf home_backup.tar ~ </h3>
