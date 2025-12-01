@@ -1,13 +1,13 @@
 package Question14;
 
 public class Main {
-    public static void m3(){
+    public static void m3() throws ArithmeticException{
         System.out.println("Insode m3");
         double result = 10/0;
         System.out.println("Result:"+result);
     }
 
-    public static void m2(){
+    public static void m2() throws  ArithmeticException{
         System.out.println("Insode m2");
         m3();
     }

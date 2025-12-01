@@ -2,51 +2,50 @@ package Question17;
 
 import java.util.HashMap;
 
-class InvalidAmountException extends Exception{
-    public InvalidAmountException(String msg){
+class InvalidAmountException extends Exception {
+    public InvalidAmountException(String msg) {
         super(msg);
     }
 }
 
-class InsufficientBalanceException extends Exception{
-    public InsufficientBalanceException(String msg){
+class InsufficientBalanceException extends Exception {
+    public InsufficientBalanceException(String msg) {
         super(msg);
     }
 }
 
 
-class BankAccount{
+class BankAccount {
     private String accountHolder;
     private double balance;
     public static int totalAccounts;
 
-    BankAccount(String accountHolder , int balance)throws InvalidAmountException{
-        if(balance<=0){
+    BankAccount(String accountHolder, int balance) throws InvalidAmountException {
+        if (balance <= 0) {
             throw new InvalidAmountException("Initial balance cannot be negative!");
         }
-        this.accountHolder=accountHolder;
-        this.balance=balance;
+        this.accountHolder = accountHolder;
+        this.balance = balance;
         totalAccounts++;
     }
 
-    public void deposit(double amount) throws InvalidAmountException{
-        if(amount<=0){
+    public void deposit(double amount) throws InvalidAmountException {
+        if (amount <= 0) {
             throw new InvalidAmountException("Deposit amount must be positive!");
-        }
-        else{
-            this.balance+=amount;
+        } else {
+            this.balance += amount;
         }
         System.out.println("Deposited: ₹" + amount);
     }
 
-    public void withdraw(double amount)throws InvalidAmountException,InsufficientBalanceException{
-  if(amount<=0){
-      throw new InvalidAmountException("Withdrawal amount must be positive!");
-  }
-  if(amount>balance){
-      throw new InsufficientBalanceException("Insufficient balance!");
-  }
-    balance-=amount;
+    public void withdraw(double amount) throws InvalidAmountException, InsufficientBalanceException {
+        if (amount <= 0) {
+            throw new InvalidAmountException("Withdrawal amount must be positive!");
+        }
+        if (amount > balance) {
+            throw new InsufficientBalanceException("Insufficient balance!");
+        }
+        balance -= amount;
         System.out.println("Withdrawn: ₹" + amount);
     }
 
@@ -63,6 +62,7 @@ class BankAccount{
         System.out.println("Current Balance: ₹" + balance);
     }
 }
+
 public class Main {
     public static void main(String[] args) {
         try {
@@ -73,12 +73,10 @@ public class Main {
             acc1.withdraw(1000);
             acc1.displayAccount();
 
+            acc1.showTotalAccounts();
             acc2.withdraw(12000); // will cause exception
-
         } catch (InvalidAmountException | InsufficientBalanceException e) {
             System.out.println("Error: " + e.getMessage());
         }
-
-        BankAccount.showTotalAccounts();
     }
 }

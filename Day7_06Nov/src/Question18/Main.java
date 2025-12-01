@@ -24,15 +24,12 @@ class Employee{
         return 0.0;
     }
 
-    public void displayInfo() {
-        System.out.println("ID: " + id + ", Name: " + name + ", Salary: ₹" + calcSalary());
-    }
 }
 
 class FullTimeEmployee extends Employee{
     private double baseSalary;
-    private double hra;  // House Rent Allowance
-    private double da;   // Dearness Allowance
+    private double hra;
+    private double da;
     private double bonus;
     public FullTimeEmployee(int id , String name , double baseSalary , double hra , double da , double bonus){
       super(id,name);

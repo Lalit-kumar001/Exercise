@@ -39,16 +39,13 @@ public class Main {
             products.add(new Product(1, "Laptop", 55000));
             products.add(new Product(2, "Headphones", 2500));
             products.add(new Product(3, "Mouse", 800));
-            products.add(new Product(4, "Keyboard", -1000)); // Invalid (throws exception)
+            products.add(new Product(4, "Keyboard", -1000));
             products.add(new Product(5, "Monitor", 12000));
         }
         catch (InvalidPriceException e){
             System.out.println(e.getMessage());
         }
-        System.out.println("\n=== Product List ===");
-        for (Product p : products) {
-            System.out.println(p);
-        }
+
 
     }
 }

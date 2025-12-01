@@ -16,6 +16,7 @@ public class Main {
 
             } catch (ArithmeticException e) {
                 System.out.println("Inner Catch: Cannot divide by zero!");
+                throw  new ArithmeticException("testing with saurabh");
             }
 
             // This line may throw ArrayIndexOutOfBoundsException

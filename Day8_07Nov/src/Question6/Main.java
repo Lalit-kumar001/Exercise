@@ -1,7 +1,9 @@
 package Question6;
 class TablePrinter{
     private boolean turnOfTwo = true;
+    private  final Object obj = new Object();
     synchronized void printTwo(){
+
         for(int i=1;i<=10;i++){
             while(!turnOfTwo){
             try {

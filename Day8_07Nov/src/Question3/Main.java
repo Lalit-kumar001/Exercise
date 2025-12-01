@@ -25,7 +25,7 @@ public class Main {
             map.put(ch,map.getOrDefault(ch,0)+1);
         }
 
-        //first non repeating character
+
         for(char c : map.keySet()){
             if(map.get(c)==1){
                 return c;
@@ -34,3 +34,4 @@ public class Main {
         return null;
     }
 }
+//lalit

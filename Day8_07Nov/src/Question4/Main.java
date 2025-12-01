@@ -8,14 +8,14 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // Step 1: Ask size of array
+
         System.out.print("Enter the size of array: ");
         int n = sc.nextInt();
 
-        // Step 2: Create array
+
         int[] arr = new int[n];
 
-        // Step 3: Take input for each element
+
         System.out.println("Enter " + n + " elements:");
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
